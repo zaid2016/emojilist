@@ -62,8 +62,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4M-I1-M4H">
+                                <rect key="frame" x="124.5" y="434" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSF-1y-ZEf">
+                                <rect key="frame" x="129" y="475" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovly Church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwH-Np-ZG4">
-                                <rect key="frame" x="106.5" y="393" width="162" height="21"/>
+                                <rect key="frame" x="106" y="393" width="162" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,13 +83,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="P4M-I1-M4H" firstAttribute="centerX" secondItem="W7v-nO-7Mc" secondAttribute="centerX" id="Plr-aE-X18"/>
                             <constraint firstItem="Sp7-PV-RTY" firstAttribute="centerX" secondItem="W7v-nO-7Mc" secondAttribute="centerX" id="XND-hX-E9f"/>
+                            <constraint firstItem="YSF-1y-ZEf" firstAttribute="centerX" secondItem="W7v-nO-7Mc" secondAttribute="centerX" id="Y6g-kR-eeI"/>
                             <constraint firstItem="Sp7-PV-RTY" firstAttribute="top" secondItem="bgh-Yg-SAh" secondAttribute="bottom" constant="40" id="ohR-ep-nFw"/>
+                            <constraint firstItem="P4M-I1-M4H" firstAttribute="top" secondItem="xwH-Np-ZG4" secondAttribute="bottom" constant="20" id="r8r-ch-odP"/>
                             <constraint firstItem="xwH-Np-ZG4" firstAttribute="top" secondItem="Sp7-PV-RTY" secondAttribute="bottom" constant="50" id="sYL-gI-jo3"/>
                             <constraint firstItem="xwH-Np-ZG4" firstAttribute="centerX" secondItem="W7v-nO-7Mc" secondAttribute="centerX" id="yWX-ah-oKI"/>
+                            <constraint firstItem="YSF-1y-ZEf" firstAttribute="top" secondItem="P4M-I1-M4H" secondAttribute="bottom" constant="20" id="yq2-nJ-Vd4"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="YSF-1y-ZEf" id="gbl-zi-kvk"/>
+                        <outlet property="categoryLabel" destination="P4M-I1-M4H" id="KDP-Ux-mOq"/>
                         <outlet property="definitionLabel" destination="xwH-Np-ZG4" id="C3Q-zE-EwH"/>
                         <outlet property="emojiLabel" destination="Sp7-PV-RTY" id="dON-uh-vEv"/>
                     </connections>
